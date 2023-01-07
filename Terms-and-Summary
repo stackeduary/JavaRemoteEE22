@@ -62,3 +62,13 @@ superclass:
 
 subclass:
 - another word for child class
+
+
+Git:
+
+The major commands:
+- git status
+- git add .
+  - adds all files and folders in the current directory
+- git commit -m "a descriptive message goes here"
+- git push

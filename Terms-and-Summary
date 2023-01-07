@@ -70,5 +70,5 @@ The 80/20 major commands:
 - git status
 - git add .
   - adds all files and folders in the current directory
-- git commit -m "a descriptive message goes here"
+- git commit -m "a descriptive commit message goes here"
 - git push

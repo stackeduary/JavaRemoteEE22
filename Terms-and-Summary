@@ -1,0 +1,64 @@
+class:
+-
+
+package:
+- set of classes
+
+library:
+- set of packages
+
+instance:
+- object
+
+object = instance (noun)
+
+instantiate (verb):
+- creating an object
+- creating an instance
+
+initialize:
+- give something an initial value
+- give something its first value
+
+declare:
+- "hey, this thing exists"
+- to make it "exist" in Java
+- declaration (noun)
+
+operator:
+examples: +, -, *, %, /
+
+operand:
+- the thing that an operator is applied to
+e.g., statement: int price + String restaurant;
+operands: price, restaurant
+operator: + (concatenation)
+
+double age = 40.0;
+int salary = 40000000;
+age + (addition) salary;
+
+
+parameters vs. arguments:
+- parameters (price, restaurant) are the placeholders when defining the method
+  - variables
+  - placeholders
+  - containers/boxes in memory
+- arguments are the actual values ("BurgerEmperor", 12) when the method is called
+  - argument <==> actual
+
+invoke a method:
+- call a method
+- e.g., billObj.doubleSalary(startingSalary);
+  - objectName.methodName(arguments);
+
+capitalization conventions in Java:
+- object names start with a lowercase letter, e.g., myDogObject
+- class names start with an uppercase letter, e.g., Dog, Math, String
+- all caps represent constants that don't/won't change in other parts of the program
+
+superclass:
+- another word for parent class
+
+subclass:
+- another word for child class

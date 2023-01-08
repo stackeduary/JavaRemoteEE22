@@ -1,3 +1,8 @@
+implement:
+- to write it in code
+- Part wants to add that implementing means writing code according to a specification
+- in common language: put into practice, or use
+
 class:
 - made up of fields and methods (including constructor)
 - blueprint for creating objects
@@ -110,3 +115,33 @@ error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
 - this is caused by your local repository not having the latest changes (i.e., code) from the remote repository (i.e., the server)
 - YOU CAN PREVENT THIS by always running `git pull` in a shared repository BEFORE you try to push your new changes
 - it's basically a refresh of the remote repository (server)
+
+
+Principles:
+- DRY
+  - don't repeat yourself
+  - if you find yourself copying and pasting a lot to comply with the DRY principle, then rethink your architecture
+
+- YAGNI
+  - you ain't gonna need it
+
+
+IntelliJ:
+- right click in the editor > Generate > choose the boilerplate (very standard and doesn't change a lot) code that you want IntelliJ to create for you
+- examples:
+  - getters
+  - setters
+  - constructors
+  - toString() methods
+- if you see an error in IntelliJ, have your cursor in/around the error and Alt + Enter to get help/correction
+
+
+Inheritance:
+- to avoid repeating one's self
+- subclass = child class
+- superclass = parent class
+- method overriding:
+  - code in subclass is written differently from how it is written in superclass
+  - the subclass method replaces the method from the superclass
+- Java only supports single inheritance
+  - a subclass can only inherit from *one* superclass

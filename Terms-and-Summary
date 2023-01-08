@@ -1,7 +1,8 @@
 implement:
 - to write it in code
-- Part wants to add that implementing means writing code according to a specification
+    - (Part wants to add that implementing means writing code according to a specification)
 - in common language: put into practice, or use
+  - The revered King implemented a new tax cut for all his people
 
 class:
 - made up of fields and methods (including constructor)
@@ -105,7 +106,7 @@ we connect the local repository to the remote repository (AKA the github.com ser
 `git clone <repository URL (SSH preferred)>`
 example:
 `git clone git@github.com:RandoAigro/MilitaryTime.git`
-- this creates a copy (clone) of Rando's repository called "MilitaryTime"
+- this creates a copy (clone) of Rando's repository called "MilitaryTime" in your local environment
 
 
 Common pitfalls:

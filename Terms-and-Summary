@@ -1,5 +1,6 @@
 class:
--
+- made up of fields and methods (including constructor)
+- blueprint for creating objects
 
 package:
 - set of classes
@@ -72,3 +73,40 @@ The 80/20 major commands:
   - adds all files and folders in the current directory
 - git commit -m "a descriptive commit message goes here"
 - git push
+
+background about Git:
+https://latesthackingnews.com/wp-content/uploads/2018/06/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png
+
+local = your computer
+
+remote = GitHub.com (could also be Gitlab, Bitbucket)
+- remote = far away
+
+working copy:
+- any directory on your local computer that has not been turned into a git repository
+- we can turn a local directory into a git repository using the `git init` command
+
+local repository:
+- is a directory that has been initialized via `git init` as a local repository
+
+remote repository:
+- exists on github.com
+- github.com/repositories > New
+  - to create a new repository
+
+we connect the local repository to the remote repository (AKA the github.com server) via the following command:
+`git remote add origin git@github.com:Stackeduary/this-is-just-an-example.git`
+
+`git clone <repository URL (SSH preferred)>`
+example:
+`git clone git@github.com:RandoAigro/MilitaryTime.git`
+- this creates a copy (clone) of Rando's repository called "MilitaryTime"
+
+
+Common pitfalls:
+- you are very likely going to see the following error when trying to push to a repo with multiple collaborators:
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
+- this is caused by your local repository not having the latest changes (i.e., code) from the remote repository (i.e., the server)
+- YOU CAN PREVENT THIS by always running `git pull` in a shared repository BEFORE you try to push your new changes
+- it's basically a refresh of the remote repository (server)

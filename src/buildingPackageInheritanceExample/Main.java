@@ -11,9 +11,14 @@ public class Main {
         // superclass (BuildingParent) toString() implementation:
         // Building {latitude=89.0, longitude=56.0, ownerName='Bill, again', squareFootage=3300.0, landArea=0.25}
 
+        System.out.println(trpd.assessValue());
+
         Skyscraper trumpSky = new Skyscraper(11.1, 22.2, "Trump Towers", 45000000, 3, 120);
         System.out.println("The value of the new Trump Tower is " + trumpSky.assessValue());
 
-        System.out.println(trpd.assessValue());
+        ApartmentBuilding aptBldg = new ApartmentBuilding(44.5, 67.9, "Bill the slumlord", 6700, 3.4, 99);
+        System.out.println("Bill the slumlord's tax bill is: " + aptBldg.calculateTaxBill());
+
+
     }
 }

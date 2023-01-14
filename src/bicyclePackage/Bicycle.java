@@ -1,4 +1,4 @@
-package com.bill;
+package bicyclePackage;
 
 public class Bicycle {
     // three fields

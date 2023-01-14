@@ -1,4 +1,6 @@
-package prepPackage;
+package buildingPackageInheritanceExample;
+
+import prepPackage.Building;
 
 public class ApartmentBuilding extends Building {
     private int numberOfUnits;

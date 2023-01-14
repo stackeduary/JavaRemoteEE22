@@ -146,3 +146,25 @@ Inheritance:
   - the subclass method replaces the method from the superclass
 - Java only supports single inheritance
   - a subclass can only inherit from *one* superclass
+
+
+Interface:
+- the interface declares the "contract" that there are certain methods that the class must implement (that the class must provide code for)
+- keyword: "implements"
+  `className implements InterfaceName`
+- in the interface, list the methods without method bodies followed by a semicolon:
+  `void sayExcuseMe();`
+- Interfaces do not contain state (for now)
+  - if you want a subclass (child) to inherit state, use a superclass (parent)
+
+modular:
+- adjective form of module
+- module ≈ Lego piece
+
+
+Principles Object-oriented Design:
+- modular code
+- flexible code
+- reusable code
+- code that's easy to test
+- problems are very localized (in a very specific place)

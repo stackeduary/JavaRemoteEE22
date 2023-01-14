@@ -1,4 +1,4 @@
-package com.bill;
+package bicyclePackage;
 
 public class Main {
     public static void main(String[] args) {

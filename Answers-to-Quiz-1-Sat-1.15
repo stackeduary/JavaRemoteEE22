@@ -4,11 +4,11 @@ Please define:
 - values of all the variables at a point in time
 
 e.g., Estonian person object:
-- sex (cannot change)
-- ID code (cannot change, 1 out of 1000, .1%)
+- sex at birth (cannot change)
+- ID code (cannot change; frequency of 1 out of 1000, .1%, so let's just simplify and say it doesn't change)
 - date of birth (cannot change)
 - home address (can change)
-- height (cannot change)
+- height (simplify and say it cannot change)
 - weight (changes)
 - set of all current thoughts (changes)
 - mood (changes)
@@ -29,7 +29,7 @@ e.g., Estonian person object:
 - directory
 
 6. What is the job of the constructor?
-- creates new objects
+- it creates new objects
 
 7. What are the two general categories of things in an object?
 - fields and methods, or more generally, data/state and behavior
@@ -38,9 +38,9 @@ e.g., Estonian person object:
 - new
 
 9. What comes after that keyword?
-- the constructor name and any arguments in the constructor
-- TestClass testObj = new TestClass(arg1, arg2, ..., arg_n)
-- Skyscraper trumpTower = new Skyscraper(67, 12000000, ...)
+- the constructor name and any arguments the constructor needs
+- ExampleClass exampleObj = new ExampleClass(arg1, arg2, ..., arg_n)
+    - Skyscraper trumpTower = new Skyscraper(67, 12000000, ...)
 
 10. How do you flip back and forth between applications using only the keyboard?
 - Alt + tab

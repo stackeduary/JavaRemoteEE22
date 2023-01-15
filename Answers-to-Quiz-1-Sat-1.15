@@ -1,0 +1,62 @@
+Please define:
+
+1. Please define state.
+- values of all the variables at a point in time
+
+e.g., Estonian person object:
+- sex (cannot change)
+- ID code (cannot change, 1 out of 1000, .1%)
+- date of birth (cannot change)
+- home address (can change)
+- height (cannot change)
+- weight (changes)
+- set of all current thoughts (changes)
+- mood (changes)
+- current location (changes)
+
+2. Please define "initialize".
+- to give a variable its first value
+
+3. Please define "instantiate".
+- create a new object from a class
+- create an instance (object) from a class
+- see #8, 9
+
+4. What's another word for "instance"?
+- object
+
+5. What's another word for "folder"?
+- directory
+
+6. What is the job of the constructor?
+- creates new objects
+
+7. What are the two general categories of things in an object?
+- fields and methods, or more generally, data/state and behavior
+
+8. What keyword is used when creating an object?
+- new
+
+9. What comes after that keyword?
+- the constructor name and any arguments in the constructor
+- TestClass testObj = new TestClass(arg1, arg2, ..., arg_n)
+- Skyscraper trumpTower = new Skyscraper(67, 12000000, ...)
+
+10. How do you flip back and forth between applications using only the keyboard?
+- Alt + tab
+
+11. How do you copy text using only the keyboard?
+- Ctrl + c
+
+12. How do you paste using the only keyboard?
+- Ctrl + v
+
+13. How do you cut using the only keyboard?
+- Ctrl + x
+
+14. How do you run a Java class using only the keyboard in IntelliJ?
+- Shift + F10
+- Ctrl + Shift + F10
+
+15. What directory is referenced by the word "source"?
+- src

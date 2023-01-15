@@ -9,7 +9,7 @@ public class Main {
         TripleDecker trpd = new TripleDecker(89, 56, "Bill, again", 3300, .25);
         System.out.println(trpd.toString());
         // superclass (BuildingParent) toString() implementation:
-        // Building {latitude=89.0, longitude=56.0, ownerName='Bill, again', squareFootage=3300.0, landArea=0.25}
+//         Building {latitude=89.0, longitude=56.0, ownerName='Bill, again', squareFootage=3300.0, landArea=0.25}
 
         System.out.println(trpd.assessValue());
 
@@ -19,6 +19,14 @@ public class Main {
         ApartmentBuilding aptBldg = new ApartmentBuilding(44.5, 67.9, "Bill the slumlord", 6700, 3.4, 99);
         System.out.println("Bill the slumlord's tax bill is: " + aptBldg.calculateTaxBill());
 
+        Cottage cttg = new Cottage(11, 22, 34345, "Bill", 2343.2, 44, true);
+//        System.out.println(cttg.ownerName); // cannot access a private field outside of the class; field owerName is in the Cottage class and cannot be printed/accessed outside of the Cottage class (in Main.java)
+//        cttg.ownerName = "Part Johanson"; // example of reassigning a public field
+//        System.out.println(cttg.ownerName);
+
+        System.out.println("======= An example of an abstract class");
+//        BuildingParent bldgPar = new BuildingParent(12, 23, "Bill", 4455, 78.9);
+//        System.out.println(bldgPar.getLatitude());
 
     }
 }

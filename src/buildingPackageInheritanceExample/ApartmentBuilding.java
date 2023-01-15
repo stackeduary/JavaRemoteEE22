@@ -7,6 +7,7 @@ public class ApartmentBuilding extends BuildingParent {
         this.numberOfUnits = numberOfUnits;
     }
 
+    @Override
     public String toString() {
         return "This building is located at " + getLatitude() + ", " + getLatitude() + " and is owned by " + getOwnerName();
     }

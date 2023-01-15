@@ -18,5 +18,8 @@ public class Main {
         Vietnamese nguoiViet = new Vietnamese();
         nguoiViet.sayHello("ong");
         nguoiViet.sayGoodbye("em");
+
+        Nigerian nwaAli = new Nigerian();
+        nwaAli.sayHello();
     }
 }

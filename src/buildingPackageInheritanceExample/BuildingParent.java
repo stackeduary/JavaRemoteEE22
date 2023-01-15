@@ -1,6 +1,6 @@
 package buildingPackageInheritanceExample;
 
-public class BuildingParent {
+public abstract class BuildingParent {
     private double taxRate;
     private double latitude;
     private double longitude;

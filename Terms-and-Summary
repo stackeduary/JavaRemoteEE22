@@ -156,6 +156,7 @@ Interface:
   `void sayExcuseMe();`
 - Interfaces do not contain state (for now)
   - if you want a subclass (child) to inherit state, use a superclass (parent)
+- a class that implements an interface MUST IMPLEMENT THE METHODS IN THE INTERFACE
 
 modular:
 - adjective form of module
@@ -168,3 +169,35 @@ Principles of object-oriented design:
 - reusable code
 - code that's easy to test
 - problems are very localized (in a very specific place)
+
+
+method signature:
+methodName(comma-separated list of parameters)
+
+method overloading:
+- when you have two or more methods inside a class with the same method name
+- THEY MUST HAVE DIFFERENT METHOD SIGNATURES
+
+UML:
+- Unified Modeling Language
+- a 1:1 mapping between the UML diagram and Java code
+
+Abstract keyword:
+- prevents the creation of an object from that class
+- compiler will throw an error if we try to instantiate an abstract class
+
+overloading:
+Sat 1/21 & Sun 1/22
+
+overriding:
+Sat 1/21 & Sun 1/22
+
+default keyword:
+Sat 1/21 & Sun 1/22
+
+explicit vs. implicit constructors:
+Sat 1/21 & Sun 1/22
+
+
+T-shaped developer:
+https://www.youtube.com/watch?v=CMKEhqMnxTg

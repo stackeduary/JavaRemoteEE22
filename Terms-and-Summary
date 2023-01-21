@@ -4,36 +4,46 @@ implement:
 - in common language: put into practice, or use
   - The revered King implemented a new tax cut for all his people
 
+
 class:
 - made up of fields and methods (including constructor)
 - blueprint for creating objects
 
+
 package:
 - set of classes
+
 
 library:
 - set of packages
 
+
 instance:
 - object
 
+
 object = instance (noun)
+
 
 instantiate (verb):
 - creating an object
 - creating an instance
 
+
 initialize:
 - give something an initial value
 - give something its first value
+
 
 declare:
 - "hey, this thing exists"
 - to make it "exist" in Java
 - declaration (noun)
 
+
 operator:
 examples: +, -, *, %, /
+
 
 operand:
 - the thing that an operator is applied to
@@ -54,24 +64,30 @@ parameters vs. arguments:
 - arguments are the actual values ("BurgerEmperor", 12) when the method is called
   - argument <==> actual
 
+
 invoke a method:
 - call a method
 - e.g., billObj.doubleSalary(startingSalary);
   - objectName.methodName(arguments);
+
 
 capitalization conventions in Java:
 - object names start with a lowercase letter, e.g., myDogObject
 - class names start with an uppercase letter, e.g., Dog, Math, String
 - all caps represent constants that don't/won't change in other parts of the program
 
+
 superclass:
 - another word for parent class
+
 
 subclass:
 - another word for child class
 
 
-Git:
+=================
+===    Git    ===
+=================
 
 The 80/20 major commands:
 - git status
@@ -117,8 +133,10 @@ error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
 - YOU CAN PREVENT THIS by always running `git pull` in a shared repository BEFORE you try to push your new changes
 - it's basically a refresh of the remote repository (server)
 
+========================
+===    Principles    ===
+========================
 
-Principles:
 - DRY
   - don't repeat yourself
   - if you find yourself copying and pasting a lot to comply with the DRY principle, then rethink your architecture
@@ -158,6 +176,7 @@ Interface:
   - if you want a subclass (child) to inherit state, use a superclass (parent)
 - a class that implements an interface MUST IMPLEMENT THE METHODS IN THE INTERFACE
 
+
 modular:
 - adjective form of module
 - module ≈ Lego piece
@@ -174,30 +193,36 @@ Principles of object-oriented design:
 method signature:
 methodName(comma-separated list of parameters)
 
+
 method overloading:
 - when you have two or more methods inside a class with the same method name
 - THEY MUST HAVE DIFFERENT METHOD SIGNATURES
+
 
 UML:
 - Unified Modeling Language
 - a 1:1 mapping between the UML diagram and Java code
 
+
 Abstract keyword:
 - prevents the creation of an object from that class
 - compiler will throw an error if we try to instantiate an abstract class
 
-overloading:
-Sat 1/21 & Sun 1/22
-
-overriding:
-Sat 1/21 & Sun 1/22
-
-default keyword:
-Sat 1/21 & Sun 1/22
-
-explicit vs. implicit constructors:
-Sat 1/21 & Sun 1/22
-
 
 T-shaped developer:
 https://www.youtube.com/watch?v=CMKEhqMnxTg
+
+INSTANce (noun) and INSTANtiate (verb)?
+- same root
+- creating an object
+- instance == object
+- instantiate create an object (create an instance)
+
+concrete:
+- not abstract
+
+abstract:
+- cannot create an object from an abstract class
+- an abstract class cannot be instantiated
+- cannot have an abstract method in a concrete class
+  - in other words, if you want to have an abstract method, the class must also be abstract

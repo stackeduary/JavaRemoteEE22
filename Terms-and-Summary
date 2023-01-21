@@ -226,3 +226,53 @@ abstract:
 - an abstract class cannot be instantiated
 - cannot have an abstract method in a concrete class
   - in other words, if you want to have an abstract method, the class must also be abstract
+
+i.e.,
+- that is to say
+- that is
+
+explicit:
+- directly or specifically mentioned
+
+implicit:
+- implied
+- not directly mentioned
+
+
+Encapsulation:
+- capsule
+  - put private members "inside a capsule"
+- hiding
+
+
+Accessors
+- getters
+  - public methods that retrieve/get/return fields
+  - convention: get<field name goes here>
+    - e.g., getOwnerName()
+    - take no arguments
+    - return a specific type
+      - `return` keyword
+- setters
+  - public methods that set/modify fields
+  - convention: set<field name goes here>
+    - e.g., setOwnerName()
+  - take an argument, which is the new value you want to set the field to
+  - no return type, i.e., `void` keyword
+  - uses the `this` keyword on the field
+    - e.g., this.authorName
+
+Access modifiers
+- public
+  - any class anywhere can use public members
+- private
+  - only members inside the class can use private members
+- protected
+  - members in subclasses can use protected members
+- default
+  - only members inside the same package can use default members
+
+
+ValidationExample:
+- use if-statements to check that only valid inputs are allowed in methods
+- prevents misuse, operator error, negligence

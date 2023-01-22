@@ -48,6 +48,7 @@ Saturday, Jan. 21, 2023
 
 12. What method must a subclass call to inherit from a superclass?
 - `super(superclass parameters)`
+    - note: there was some debate about whether `super` is just a keyword or also a method. See https://www.geeksforgeeks.org/difference-between-super-and-super-in-java-with-examples/ for more information. But I was just looking for `super(superclass parameters)`, which is a call to the superclass's constructor, which itself is a method. We didn't reach a consensus in the debate, but the goal was just to reinforce how the super keyword is used.
 
 13. What keyword must you use for inheritance?
 - `extends`

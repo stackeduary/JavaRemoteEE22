@@ -248,19 +248,19 @@ Encapsulation:
 Accessors
 - getters
   - public methods that retrieve/get/return fields
-  - convention: get<field name goes here>
-    - e.g., getOwnerName()
+  - naming convention: `getFieldName()`
+    - e.g., `getOwnerName()`
     - take no arguments
     - return a specific type
       - `return` keyword
 - setters
   - public methods that set/modify fields
-  - convention: set<field name goes here>
-    - e.g., setOwnerName()
+  - naming convention: `setFieldName()`
+    - e.g., `setOwnerName(String newOwnerName)`
   - take an argument, which is the new value you want to set the field to
   - no return type, i.e., `void` keyword
   - uses the `this` keyword on the field
-    - e.g., this.authorName
+    - e.g., `this.authorName`
 
 Access modifiers
 - public

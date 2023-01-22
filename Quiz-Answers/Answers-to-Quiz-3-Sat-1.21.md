@@ -63,10 +63,10 @@
 
 16. _______ _______ is the situation when a subclass has its own implementation of a method defined in the superclass. (two words)
 - method overriding
-- override = replace
-    - providing a new version
-    - take the place of
-    - supersede
+  - override = replace
+      - providing a new version
+      - take the place of
+      - supersede
 - if the method is from an interface (without the `default` keyword) or an abstract class, it must be implemented, which means that it is overridden (replaced) by default
 
 17. What does the word "member" refer to (as in, class members)?

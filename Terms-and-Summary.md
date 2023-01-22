@@ -334,3 +334,19 @@ interface (verb):
 examples of interfaces:
 - GUI, graphical user interface
 - CLI, command line interface
+
+
+Composition:
+- "has-a" relationship
+  - "whole" component has a "part" component
+  - whole cannot exist without its parts
+  - if a whole is destroyed, then the parts are destroyed too
+- check out https://www.digitalocean.com/community/tutorials/composition-in-java-example
+  - the whole is the `Person` class
+  - the part is the `Job` class
+    - the `Job` class has no constructor (it inherits one from the `Object` class)
+    - the `Person` constructor creates a new `job` object and initializes the `job`'s fields through setters only
+- composition gives developers more flexibility than just having to use subclassing
+  - allows the developer to use only the parts of the "part" class that are needed 
+  - one class can change but the other doesn't need to change
+    - can localize errors and refactoring

@@ -1,15 +1,12 @@
 package SuperDemo;
 
 public class Superclass {
-
-    public void printMethod() {
-        System.out.println("Printed in Superclass.");
+    protected String location = "Super";
+    public void sayHello() {
+        System.out.println("Hello from the superclass!");
     }
-
-    public static void main(String[] args) {
-        Subclass sc = new Subclass();
-        sc.printMethod();
-    }
+//    public static void main(String[] args) {
+//        Subclass subInSuper = new Subclass();
+//        subInSuper.sayHello();
+//    }
 }
-
-

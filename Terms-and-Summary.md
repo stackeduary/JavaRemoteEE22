@@ -51,8 +51,8 @@ e.g., statement: int price + String restaurant;
 operands: price, restaurant
 operator: + (concatenation)
 
-double age = 40.0;
-int salary = 40000000;
+`double age = 40.0;`
+`int salary = 40000000;`
 age + (addition) salary;
 
 
@@ -172,6 +172,7 @@ Interface:
   `className implements InterfaceName`
 - in the interface, list the methods without method bodies followed by a semicolon:
   `void sayExcuseMe();`
+    - the exception is default methods defined inside an interface because default methods actually *do* have an implementation (and hence, a method body)   
 - Interfaces do not contain state (for now)
   - if you want a subclass (child) to inherit state, use a superclass (parent)
 - a class that implements an interface MUST IMPLEMENT THE METHODS IN THE INTERFACE
@@ -276,3 +277,60 @@ Access modifiers
 ValidationExample:
 - use if-statements to check that only valid inputs are allowed in methods
 - prevents misuse, operator error, negligence
+
+
+Information hiding:
+- subclass and superclass have fields with the same name; the subclass hides the superclass's field
+
+
+Reference data types vs. primitive data types:
+- 8 primitive data types:
+  - integer
+  - boolean
+  - float
+  - double
+  - char
+  - long
+  - short
+  - byte
+- reference data type:
+  - anything that is not a primitive
+    - object
+      - collections (array, ArrayList, HashMap)
+      - String
+
+
+Constructors:
+- parameterized (explicit) constructor vs. no-arguments (implicit) constructor
+  - I was misusing a C++ term it appears: explicit and implicit are terms from C++
+- 3 types of constructors:
+  - parameterized constructor
+    - `ConstructorMethod(dataType1 param1, dataType2 param2, ...)`
+  - no-argument constructor
+    - `ConstructorName()`
+  - default
+    - nothing is even written where the constructor normally is
+  - see https://www.freecodecamp.org/news/default-constructor-in-java/ for another example
+
+Abstraction:
+- hiding implementation details
+- zoom out so smaller, less significant details aren't visible
+- common phrases: 
+  - "abtract away the details"
+  - "level of abstraction"
+- don't need to know *how* it works, just how to use it
+- key tools:
+  - abstract classes and methods
+  - interfaces
+
+
+API:
+- application programming interface
+  - one piece of software communicating directly with another without there being a user in the middle facilitating the interaction
+
+interface (verb):
+- interact with something
+
+examples of interfaces:
+- GUI, graphical user interface
+- CLI, command line interface

@@ -1,4 +1,6 @@
-Quiz Sunday, Jan. 22, 2023
+Quiz 4
+Sunday, Jan. 22, 2023
+
 1. What do we need in order to run a Java class?
 2. Give an example in code of something that is invoked.
 3. What keyword would you use if you want the compiler to throw an error if an object is instantiated from a class?

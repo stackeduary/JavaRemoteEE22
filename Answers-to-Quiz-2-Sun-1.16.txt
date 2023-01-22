@@ -1,4 +1,6 @@
-Quiz Sunday, Jan. 16, 2023
+Quiz 2
+Sunday, Jan. 16, 2023
+
 For the class: https://docs.oracle.com/javase/tutorial/essential/environment/examples/PropertiesTest.java
 1. What is the name of this class?
 - PropertiesTest

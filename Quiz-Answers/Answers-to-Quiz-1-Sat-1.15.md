@@ -1,5 +1,5 @@
-Quiz 1
-Saturday, Jan. 14, 2023
+## Quiz 1
+#### Saturday, Jan. 14, 2023
 
 Please define:
 
@@ -38,28 +38,28 @@ e.g., Estonian person object:
 - fields and methods, or more generally, data/state and behavior
 
 8. What keyword is used when creating an object?
-- new
+- `new`
 
 9. What comes after that keyword?
 - the constructor name and any arguments the constructor needs
-- ExampleClass exampleObj = new ExampleClass(arg1, arg2, ..., arg_n)
-    - Skyscraper trumpTower = new Skyscraper(67, 12000000, ...)
+- `ExampleClass exampleObj = new ExampleClass(arg1, arg2, ..., arg_n)`
+    - `Skyscraper trumpTower = new Skyscraper(67, 12000000, ...)`
 
 10. How do you flip back and forth between applications using only the keyboard?
-- Alt + tab
+- `Alt + tab`
 
 11. How do you copy text using only the keyboard?
-- Ctrl + c
+- `Ctrl + c`
 
 12. How do you paste using the only keyboard?
-- Ctrl + v
+- `Ctrl + v`
 
 13. How do you cut using the only keyboard?
-- Ctrl + x
+- `Ctrl + x`
 
 14. How do you run a Java class using only the keyboard in IntelliJ?
-- Shift + F10
-- Ctrl + Shift + F10
+- `Shift + F10`
+- `Ctrl + Shift + F10`
 
 15. What directory is referenced by the word "source"?
-- src
+- `src`

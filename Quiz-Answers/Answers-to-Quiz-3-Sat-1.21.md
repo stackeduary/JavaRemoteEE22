@@ -1,8 +1,8 @@
-Quiz 3
-Saturday, Jan. 21, 2023
+## Quiz 3
+#### Saturday, Jan. 21, 2023
 
 1. What is a static method?
-- method that is called by a class, not an object; e.g., Math.pow(base, exponent)
+- method that is called by a class, not an object; e.g., `Math.pow(base, exponent)`
 - you don't need to create an object in order to call the method
 - doesn't have the `this` keyword available
 
@@ -20,7 +20,7 @@ Saturday, Jan. 21, 2023
 - individual methods or classes (i.e., small units of code)
 
 6. How do you show the current directory you're in in a Linux terminal (e.g., Bash)?
-- pwd
+- `pwd`
 
 7. How do you move to the parent directory in a Linux terminal (e.g., Bash)?
 - `cd ..`
@@ -30,20 +30,22 @@ Saturday, Jan. 21, 2023
 - `ls -l -a`
 - `ls -al`
 - `ls -lah`
+- (all the above are equivalent)
 
 9. How do you add all the files in the current directory to your local git repository?
 - `git add --all`
 - `git add -A`
 - `git add .`
+- (all the above are equivalent)
 
 10. What is a method's signature?
-- methodName(param1, param2, ..., param_n)
+- `methodName(param1, param2, ..., param_n)`
 - name of the method followed by the parameter list in parentheses
 
 11. _______ _______ is the situation when a class has multiple methods with the same name. (two words)
 - method overloading
 - overload: lots of methods
-- Java requires overloaded methods to have different method signatures, because it throws a compiler error
+- Java requires overloaded methods to have different method signatures, otherwise, it throws a compiler error
     - so that means that parameter lists are different between all the methods
 
 12. What method must a subclass call to inherit from a superclass?
@@ -61,7 +63,7 @@ Saturday, Jan. 21, 2023
 
 16. _______ _______ is the situation when a subclass has its own implementation of a method defined in the superclass. (two words)
 - method overriding
-- replace
+- override = replace
     - providing a new version
     - take the place of
     - supersede

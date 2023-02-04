@@ -64,7 +64,7 @@
 
 ###### Refer to https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/java-microservices/spring-cloud-gcp-guestbook/5b-pubsub/guestbook-frontend/src/main/java/com/example/frontend/FrontendApplication.java for the following questions:
 18. What is the name of the class?
-  - FrontendApplication
+  - `FrontendApplication`
 
 19. What package is this class in?
   - `com.example.frontend`
@@ -76,7 +76,7 @@
   - five
 
 22. How many methods are *defined* in this class?
-  - main, messageSender
+  - `main`, `messageSender`
 
 23. What are their return types?
   - `main` returns nothing because it's void, and `messageSender` returns a new object of `MessageSender` type

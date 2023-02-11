@@ -1,4 +1,10 @@
 *.iml
 .idea
-out
-Prep
+/out
+/Prep
+/build
+gradlew
+gradlew.bat
+settings.gradle
+/.gradle
+/gradle/wrapper

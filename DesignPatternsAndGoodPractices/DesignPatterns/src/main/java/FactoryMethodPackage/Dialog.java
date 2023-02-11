@@ -1,6 +1,4 @@
-package FactoryMethod;
-
-import FactoryMethod.Button;
+package FactoryMethodPackage;
 
 public abstract class Dialog {
     public void renderWindow() {

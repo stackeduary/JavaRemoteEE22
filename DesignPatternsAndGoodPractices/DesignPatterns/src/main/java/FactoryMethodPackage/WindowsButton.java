@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethodPackage;
 
 import javax.swing.*;
 import java.awt.*;

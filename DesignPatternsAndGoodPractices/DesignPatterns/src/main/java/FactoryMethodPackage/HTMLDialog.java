@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethodPackage;
 
 public class HTMLDialog extends Dialog {
     @Override

@@ -1,6 +1,4 @@
-package FactoryMethod;
-
-import FactoryMethod.*;
+package FactoryMethodPackage;
 
 
 public class DemoClient {
@@ -16,7 +14,7 @@ public class DemoClient {
         if (System.getProperty("os.name").equals("Linux")) {
             dialog = new WindowsDialog();
         } else {
-            dialog = new HTMLDialog();
+            dialog = new HTM    LDialog();
         }
     }
 

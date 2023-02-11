@@ -1,4 +1,4 @@
-package FactoryMethod;
+package FactoryMethodPackage;
 
 public class HTMLButton implements Button {
     @Override

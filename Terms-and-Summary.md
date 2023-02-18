@@ -1,3 +1,5 @@
+# Java Object-Oriented Programming Principles
+
 implement:
 - to write it in code
     - (Part wants to add that implementing means writing code according to a specification)
@@ -350,3 +352,80 @@ Composition:
   - allows the developer to use only the parts of the "part" class that are needed 
   - one class can change but the other doesn't need to change
     - can localize errors and refactoring
+
+
+
+# Other Features of the Java Language
+
+
+
+### Reference Equality vs. Value Equality
+
+parameter vs. argument:
+
+
+*primitives and reference values:*
+  8 primitives in Java:
+    - char
+    - int
+    - double
+    - float
+    - boolean
+    - short
+    - long
+    - byte
+  - reference variables are any variables that are not primitives
+
+
+Two types of equality:
+1. values
+  - two objects have the same values
+  - semantic
+  - **it is the developer's responsibility to define what it means for two objects to be equal in value**
+    - requires overriding the `.equals()` method that every class inherits from the `Object` class
+
+2. memory reference (location in RAM)
+  - whether two objects have the same place in your computer's memory
+  - synonymous terms:
+    - memory location
+    - memory address
+    - location in memory
+  - the `==` operator checks to see if two objects have the same memory location
+
+semantically:
+- meaning
+- "human language"
+
+syntactically:
+- computer syntax
+  - order of symbols
+
+sentence 1: "Let's eat grandma"
+sentence 2: "Let's eat, grandma"
+
+syntactically, they are almost identical
+semantically, they are extremely different
+
+
+everything in Java is an object
+every class inherits from the Object class
+
+
+
+
+### Exceptions in Java
+
+**Compile Time vs. Runtime**
+
+Reminder how to compile and run a Java program from the command line:
+0. `cd` into the directory where your `.java` files are located
+1. `javac <file name>.java`
+2. `java <file name>`
+  - this will automatically find and run the `.class` files
+
+
+**Two ways to handle exceptions in Java:**
+1. Add the exception to the method signature
+2. surround the potentially-erroring code with a try-catch block
+
+*if you have errors in your program, alt + enter is your friend!*

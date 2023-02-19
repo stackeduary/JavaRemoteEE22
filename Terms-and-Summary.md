@@ -471,9 +471,26 @@ Reminder how to compile and run a Java program from the command line:
 
 *side note: if you have errors in your program, alt + enter is your friend!*
 
+Other comments about exceptions:    
+- exceptions are ordinary objects, but derive from the Exceptions class
+- the user should never see the stacktrace
+  - properly handled exceptions enables this
+- comma-separated list of exceptions thrown in method declaration
+  - but can only throw one exception at at time
+- must handle child exception before handling the parent exception in catch blocks
+- NullPointerExceptions arise from a variable that doesn't reference anything
+- when you throw an exception, it immediately goes to the catch block
+- creating our own custom error is better than the standard Java errors that are harder for the end user to understand and debug
+- can put a `finally` block at the end, which will always be executed no matter what happens in the blocks above it
 
-### Anonymous Classes
 
+### Nested Classes
 
-
-### Inner Classes
+Two types of nested classes:
+- static
+- inner
+  - AKA non-static
+  - has access to all the members (fields, methods) of the enclosing class
+  - to create an "inner" object, we must first have an instance of the outer class
+    - syntax: `OuterClass.InnerClass innerObj = outerObj.new InnerClass(<constructor arguments>);`
+- see https://programmerbay.com/wp-content/uploads/2020/03/Types-of-Nested-Class-in-Java.jpg    

@@ -1,4 +1,57 @@
-# Java Object-Oriented Programming Principles
+# Git
+
+The 80/20 major commands:
+- git status
+- git add .
+  - adds all files and folders in the current directory
+- git commit -m "a descriptive commit message goes here"
+- git push
+
+background about Git:
+https://latesthackingnews.com/wp-content/uploads/2018/06/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png
+
+local = your computer
+
+remote = GitHub.com (could also be Gitlab, Bitbucket)
+- remote = far away
+
+working copy:
+- any directory on your local computer that has not been turned into a git repository
+- we can turn a local directory into a git repository using the `git init` command
+
+local repository:
+- is a directory that has been initialized via `git init` as a local repository
+
+remote repository:
+- exists on github.com
+- github.com/repositories > New
+  - to create a new repository
+
+we connect the local repository to the remote repository (AKA the github.com server) via the following commands:
+<br>
+`git remote add origin git@github.com:Stackeduary/this-is-just-an-example.git`
+<br>
+<br>
+`git clone <repository URL (SSH preferred)>`
+
+example:
+<br>
+`git clone git@github.com:RandoAigro/MilitaryTime.git`
+- this creates a copy (clone) of Rando's repository called "MilitaryTime" in your local environment
+
+
+Common pitfalls:
+- you are very likely going to see the following error when trying to push to a repo with multiple collaborators:
+```
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
+```
+- this is caused by your local repository not having the latest changes (i.e., code) from the remote repository (i.e., the server)
+- YOU CAN PREVENT THIS by always running `git pull` in a shared repository BEFORE you try to push your new changes
+- it's basically a refresh of the remote repository (server)
+
+
+# Java Object-Oriented Programming
 
 implement:
 - to write it in code
@@ -44,7 +97,13 @@ declare:
 
 
 operator:
-examples: +, -, *, %, /
+- examples: 
+  - addition, string concatenation: +
+  - subtraction: -
+  *
+  <br>
+  %
+  <br> /
 
 
 operand:
@@ -87,57 +146,9 @@ subclass:
 - another word for child class
 
 
-=================
-===    Git    ===
-=================
-
-The 80/20 major commands:
-- git status
-- git add .
-  - adds all files and folders in the current directory
-- git commit -m "a descriptive commit message goes here"
-- git push
-
-background about Git:
-https://latesthackingnews.com/wp-content/uploads/2018/06/Distributed-Version-Control-System-Workflow-What-Is-Git-Edureka.png
-
-local = your computer
-
-remote = GitHub.com (could also be Gitlab, Bitbucket)
-- remote = far away
-
-working copy:
-- any directory on your local computer that has not been turned into a git repository
-- we can turn a local directory into a git repository using the `git init` command
-
-local repository:
-- is a directory that has been initialized via `git init` as a local repository
-
-remote repository:
-- exists on github.com
-- github.com/repositories > New
-  - to create a new repository
-
-we connect the local repository to the remote repository (AKA the github.com server) via the following command:
-`git remote add origin git@github.com:Stackeduary/this-is-just-an-example.git`
-
-`git clone <repository URL (SSH preferred)>`
-example:
-`git clone git@github.com:RandoAigro/MilitaryTime.git`
-- this creates a copy (clone) of Rando's repository called "MilitaryTime" in your local environment
 
 
-Common pitfalls:
-- you are very likely going to see the following error when trying to push to a repo with multiple collaborators:
- ! [rejected]        main -> main (fetch first)
-error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
-- this is caused by your local repository not having the latest changes (i.e., code) from the remote repository (i.e., the server)
-- YOU CAN PREVENT THIS by always running `git pull` in a shared repository BEFORE you try to push your new changes
-- it's basically a refresh of the remote repository (server)
-
-========================
-===    Principles    ===
-========================
+### Principles
 
 - DRY
   - don't repeat yourself
@@ -145,6 +156,8 @@ error: failed to push some refs to 'github.com:SyncMaster7/git-exercise.git'
 
 - YAGNI
   - you ain't gonna need it
+
+<hr>
 
 
 IntelliJ:
@@ -154,8 +167,10 @@ IntelliJ:
   - setters
   - constructors
   - toString() methods
-- if you see an error in IntelliJ, have your cursor in/around the error and Alt + Enter to get help/correction
+- keyboard shortcut: alt + insert
+- if you see an error in IntelliJ, have your cursor in/around the error and alt + enter to get help/correction
 
+<hr>
 
 Inheritance:
 - to avoid repeating one's self
@@ -354,11 +369,6 @@ Composition:
     - can localize errors and refactoring
 
 
-
-# Other Features of the Java Language
-
-
-
 ### Reference Equality vs. Value Equality
 
 parameter vs. argument:
@@ -415,7 +425,8 @@ every class inherits from the Object class
 
 ### Exceptions in Java
 
-**Compile Time vs. Runtime**
+*Background: Compile Time vs. Runtime*
+- https://www.baeldung.com/cs/runtime-vs-compile-time
 
 Reminder how to compile and run a Java program from the command line:
 0. `cd` into the directory where your `.java` files are located
@@ -424,8 +435,43 @@ Reminder how to compile and run a Java program from the command line:
   - this will automatically find and run the `.class` files
 
 
+**Two major kinds of exceptions:**
+
+1. *Checked exceptions*
+  - ones that the developer is forced to handle
+  - examples:
+    - FileNotFoundException
+    - IOException
+
+2. *Unchecked exceptions*
+  - AKA runtime exceptions
+  - not forced to handle
+    - i.e., don't have to have a try-catch exception
+  - can be ignored
+  - examples:
+    - IndexOutOfBoundsException
+    - IllegalStateException
+    - EmptyStackException
+    - NullPointerException
+    - ArrayIndexOutOfBoundsException
+
 **Two ways to handle exceptions in Java:**
 1. Add the exception to the method signature
 2. surround the potentially-erroring code with a try-catch block
+  - try block:
+    - there can only be one try block
+  - catch blocks:
+    - there can be as many as you like
+  - finally block:
+    - optional
+    - can only have one
+    - executes no matter what happened in the previous try-catch blocks
 
-*if you have errors in your program, alt + enter is your friend!*
+*side note: if you have errors in your program, alt + enter is your friend!*
+
+
+### Anonymous Classes
+
+
+
+### Inner Classes

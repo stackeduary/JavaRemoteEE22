@@ -7,7 +7,7 @@
 
 3. What are the two types of equality in Java? Write them out in words as well as syntactically.
 
-4. Which one can the developer provide his/her own implementation of?
+4. Continuing from the previous question, which one can the developer provide his/her own implementation of?
 
 5. _______ equality implies _______ equality.
 

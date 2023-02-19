@@ -371,6 +371,12 @@ Composition:
     - can localize errors and refactoring
 
 
+### Enums
+
+A fixed set of possible values for a variable
+- only represents certain values of a fixed set    
+
+
 ### Reference Equality vs. Value Equality
 
 *primitives and reference values:*

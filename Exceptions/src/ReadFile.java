@@ -1,8 +1,7 @@
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 
-public class Main {
+public class ReadFile {
     /*
      * Added the exception to the method signature
      * */

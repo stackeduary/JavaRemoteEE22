@@ -100,41 +100,42 @@ operator:
 - examples: 
   - addition, string concatenation: +
   - subtraction: -
-  *
-  <br>
-  %
-  <br> /
+  - multiplication: *
+  - division: /
+  - modulus: %
 
 
 operand:
 - the thing that an operator is applied to
-e.g., statement: int price + String restaurant;
+e.g., statement: `int price + String restaurant`;
 operands: price, restaurant
 operator: + (concatenation)
 
 `double age = 40.0;`
+<br>
 `int salary = 40000000;`
+<br>
 age + (addition) salary;
 
 
 parameters vs. arguments:
-- parameters (price, restaurant) are the placeholders when defining the method
+- parameters `(price, restaurant)` are the placeholders when defining the method
   - variables
   - placeholders
   - containers/boxes in memory
-- arguments are the actual values ("BurgerEmperor", 12) when the method is called
+- arguments are the actual values `("BurgerEmperor", 12)` when the method is called
   - argument <==> actual
 
 
 invoke a method:
 - call a method
-- e.g., billObj.doubleSalary(startingSalary);
-  - objectName.methodName(arguments);
+- e.g., `billObj.doubleSalary(startingSalary);`
+  - `objectName.methodName(arguments);`
 
 
 capitalization conventions in Java:
-- object names start with a lowercase letter, e.g., myDogObject
-- class names start with an uppercase letter, e.g., Dog, Math, String
+- object names start with a lowercase letter, e.g., `myDogObject`
+- class names start with an uppercase letter, e.g., `Dog`, `Math`, `String`
 - all caps represent constants that don't/won't change in other parts of the program
 
 
@@ -186,6 +187,7 @@ Inheritance:
 Interface:
 - the interface declares the "contract" that there are certain methods that the class must implement (that the class must provide code for)
 - keyword: "implements"
+<br>
   `className implements InterfaceName`
 - in the interface, list the methods without method bodies followed by a semicolon:
   `void sayExcuseMe();`
@@ -230,7 +232,7 @@ Abstract keyword:
 T-shaped developer:
 https://www.youtube.com/watch?v=CMKEhqMnxTg
 
-INSTANce (noun) and INSTANtiate (verb)?
+INSTANce (noun) and INSTANtiate (verb)
 - same root
 - creating an object
 - instance == object
@@ -291,7 +293,7 @@ Access modifiers
   - only members inside the same package can use default members
 
 
-ValidationExample:
+[`ValidationExample`](https://github.com/Stackeduary/JavaRemoteEE22/blob/master/src/ValidationExample.java):
 - use if-statements to check that only valid inputs are allowed in methods
 - prevents misuse, operator error, negligence
 
@@ -371,24 +373,21 @@ Composition:
 
 ### Reference Equality vs. Value Equality
 
-parameter vs. argument:
-
-
 *primitives and reference values:*
-  8 primitives in Java:
-    - char
-    - int
-    - double
-    - float
-    - boolean
-    - short
-    - long
-    - byte
-  - reference variables are any variables that are not primitives
+- 8 primitives in Java:
+  - char
+  - int
+  - double
+  - float
+  - boolean
+  - short
+  - long
+  - byte
+- reference variables are any variables that are not primitives
 
 
 Two types of equality:
-1. values
+1. value
   - two objects have the same values
   - semantic
   - **it is the developer's responsibility to define what it means for two objects to be equal in value**
@@ -410,14 +409,17 @@ syntactically:
 - computer syntax
   - order of symbols
 
-sentence 1: "Let's eat grandma"
-sentence 2: "Let's eat, grandma"
+example of syntactic vs. semantic differences
+- sentence 1: "Let's eat grandma"
+- sentence 2: "Let's eat, grandma"
 
 syntactically, they are almost identical
+<br>
 semantically, they are extremely different
 
 
 everything in Java is an object
+<br>
 every class inherits from the Object class
 
 
@@ -429,9 +431,9 @@ every class inherits from the Object class
 - https://www.baeldung.com/cs/runtime-vs-compile-time
 
 Reminder how to compile and run a Java program from the command line:
-0. `cd` into the directory where your `.java` files are located
-1. `javac <file name>.java`
-2. `java <file name>`
+1. `cd` into the directory where your `.java` files are located
+2. `javac <file name>.java`
+3. `java <file name>`
   - this will automatically find and run the `.class` files
 
 
@@ -440,8 +442,8 @@ Reminder how to compile and run a Java program from the command line:
 1. *Checked exceptions*
   - ones that the developer is forced to handle
   - examples:
-    - FileNotFoundException
-    - IOException
+    - `FileNotFoundException`
+    - `IOException`
 
 2. *Unchecked exceptions*
   - AKA runtime exceptions
@@ -449,20 +451,20 @@ Reminder how to compile and run a Java program from the command line:
     - i.e., don't have to have a try-catch exception
   - can be ignored
   - examples:
-    - IndexOutOfBoundsException
-    - IllegalStateException
-    - EmptyStackException
-    - NullPointerException
-    - ArrayIndexOutOfBoundsException
+    - `IndexOutOfBoundsException`
+    - `IllegalStateException`
+    - `EmptyStackException`
+    - `NullPointerException`
+    - `ArrayIndexOutOfBoundsException`
 
 **Two ways to handle exceptions in Java:**
 1. Add the exception to the method signature
 2. surround the potentially-erroring code with a try-catch block
-  - try block:
-    - there can only be one try block
-  - catch blocks:
+  - `try` block:
+    - there can only be one `try` block
+  - `catch` blocks:
     - there can be as many as you like
-  - finally block:
+  - `finally` block:
     - optional
     - can only have one
     - executes no matter what happened in the previous try-catch blocks

@@ -7,7 +7,7 @@
     - anything that is not a primitive; e.g., objects, arrays, etc.
 
 2. How can you create your own custom data type?
-  - create a class
+  - create a class (or an interface, or an enum)
 
 3. What are the two types of equality in Java? Write them out in words as well as syntactically.
   - reference equality
@@ -19,7 +19,8 @@
   - `.equals()`
 
 5. Reference equality implies value equality.
+  - if two objects have the same memory reference, then they must have the same value.
 
 6. Everything in Java is an object.
 
-7. The object class is the root class in Java. Everything inherits from this class.
+7. The Object class is the root class in Java. Everything inherits from the Object class.

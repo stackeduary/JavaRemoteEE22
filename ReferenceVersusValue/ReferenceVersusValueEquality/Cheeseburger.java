@@ -28,15 +28,28 @@ public class Cheeseburger {
 //    }
 
 
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Cheeseburger that)) return false;
+//        return Double.compare(that.price, price) == 0 && hasBacon == that.hasBacon && Objects.equals(restaurant, that.restaurant);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(restaurant, price, hasBacon);
+//    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Cheeseburger that)) return false;
-        return Double.compare(that.price, price) == 0 && hasBacon == that.hasBacon && Objects.equals(restaurant, that.restaurant);
+        return Double.compare(that.price, price) == 0 && hasBacon == that.hasBacon && isDelicious == that.isDelicious && restaurant.equals(that.restaurant);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(restaurant, price, hasBacon);
+        return Objects.hash(restaurant, price, hasBacon, isDelicious);
     }
 }

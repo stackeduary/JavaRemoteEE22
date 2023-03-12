@@ -11,7 +11,7 @@ public class ForLoops {
         for (int year = 1896; year <= 2020; year += 4) {
             if (year == 1916 || year == 1940 || year == 1944) continue;
             System.out.println(year);
-            olympicYears.add(year); // add each year to an array list
+            olympicYears.add(year); // add each year to an array list called olympicYears
         }
         // part II: enhanced for-loop
         System.out.println("======== enhanced for-loop ========");

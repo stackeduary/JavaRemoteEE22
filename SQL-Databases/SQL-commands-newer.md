@@ -141,10 +141,6 @@ NEW QUERIES
 
 
 
-
-
-
-
 create database if not exists emp_super;
 create table if not exists emp_super(
 employee varchar(255),

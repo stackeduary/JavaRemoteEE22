@@ -115,4 +115,3 @@ NEW QUERIES
 
 
 18. Show all information for payments made on 7/4/2005
-

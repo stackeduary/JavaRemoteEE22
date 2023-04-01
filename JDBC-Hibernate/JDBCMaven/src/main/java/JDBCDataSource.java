@@ -14,6 +14,7 @@ public class JDBCDataSource {
             System.out.println("connection: " + connection.isValid(0));
 
             // CRUD = create, read, update, delete
+
             // SELECT (read)
             PreparedStatement preparedStatement = connection.prepareStatement("select * from employees where employeenumber = ?");
             preparedStatement.setInt(1, 1216);
